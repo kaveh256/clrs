@@ -1,6 +1,6 @@
-# Implementation of data structures and algorithms from CLRS
+# Data structures and algorithms from CLRS
 
-These are implementations of algorithms from the book
+These are implementations of data structures and algorithms from the book
 
 [Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, 
 "Introduction to Algorithms"
