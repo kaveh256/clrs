@@ -1,5 +1,6 @@
 # Linear Search
 # CLRS Chapter 2 Page 22
+# Ex. 2.1-3
 
 
 def linear_search(x, items):
