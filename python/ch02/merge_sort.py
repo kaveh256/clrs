@@ -1,5 +1,5 @@
 # Merge Sort
-# CLRS Chapter 2 Page 31
+# CLRS Chapter 2 Page 31 and 34
 
 import math
 
