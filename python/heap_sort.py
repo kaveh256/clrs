@@ -3,6 +3,7 @@
 
 from heap import build_max_heap
 from heap import max_heapify
+from heap import remove_last
 from heap import _swap
 from heap import _root
 
@@ -26,7 +27,7 @@ def heap_sort(items):
     result = [0 for x in range(n)]
     for i in reversed(range(n)):
         _swap(items, _root(), i)
-        result[i] = items.pop()
+        result[i] = remove_last(items)
         max_heapify(items, _root())
 
     return result

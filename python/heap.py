@@ -24,14 +24,18 @@ def build_max_heap(heap):
     return heap
 
 
+def remove_last(heap):
+    return heap.pop()
+
+
 def remove(heap, node):
     # Swap the item with the last item if needed.
     last = size(heap) - 1
     if node != last:
         _swap(heap, node, last)
 
-    # Remove the last item
-    item = heap.pop()
+    # Remove the last item.
+    item = remove_last(heap)
 
     # Fix the heap property.
     max_heapify(heap, node)
