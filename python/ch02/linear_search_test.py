@@ -14,6 +14,7 @@ class InsertionSortTests(unittest.TestCase):
         x = 0
         self.assertEqual(linear_search(x, items), None)
 
+
 def main():
     unittest.main()
 
