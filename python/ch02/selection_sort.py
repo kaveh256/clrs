@@ -1,5 +1,6 @@
 # Selection Sort
-# CLRS Chapter 2 Page 18
+# CLRS Chapter 2 Page 29
+# Ex. 2.2-2
 
 
 def selection_sort(items):
