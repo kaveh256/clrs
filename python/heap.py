@@ -1,5 +1,5 @@
 # Heap
-# CLRS Chapter 6 Page
+# CLRS Chapter 6 Page 152, 154, 157, 163, 164
 # For CPython's implementation see:
 #   https://hg.python.org/cpython/file/2.7/Lib/heapq.py
 
@@ -18,7 +18,7 @@ def max_heapify(heap, node):
 
 
 def build_max_heap(heap):
-    # Run max_heapify from buttom up.
+    # Run max_heapify buttom-up.
     for node in reversed(range((len(heap) - 1) // 2 + 1)):
         max_heapify(heap, node)
     return heap
@@ -29,6 +29,8 @@ def remove_last(heap):
 
 
 def remove(heap, node):
+    if node >= size(heap):
+        raise Exception("Node does not exist in the heap.")
     # Swap the item with the last item if needed.
     last = size(heap) - 1
     if node != last:
@@ -47,15 +49,30 @@ def remove_top(heap):
     return remove(heap, _root())
 
 
+def decrease_key(heap, node, item):
+    if heap[node] < item:
+        raise Exception("The new key is lsrger than the current key.")
+
+    heap[node] = item
+
+    _move_down(heap, node)
+
+
+def increase_key(heap, node, item):
+    if item < heap[node]:
+        raise Exception("The new key is smaller than the current key.")
+
+    heap[node] = item
+
+    _move_up(heap, node)
+
+
 def insert(heap, item):
     # Put the item at the end.
     node = size(heap)
     heap.append(item)
 
-    # Move up the item as long as needed.
-    while node != _root() and heap[_parent(node)] < heap[node]:
-        _swap(heap, node, _parent(node))
-        node = _parent(node)
+    _move_up(heap, node)
 
 
 def top(heap):
@@ -102,6 +119,7 @@ def _root():
 
 def _move_down(heap, node):
     # Move down the item as long as needed.
+    # This is an iterative version of max_heapify.
     while node < size(heap):
         left = _left(node)
         right = _right(node)
