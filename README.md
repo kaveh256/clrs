@@ -1,4 +1,4 @@
-# Data structures and algorithms from CLRS
+# Data Structures and Algorithms from CLRS
 
 These are implementations of data structures and algorithms from the book
 
