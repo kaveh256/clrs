@@ -2,9 +2,8 @@
 
 These are implementations of data structures and algorithms from the book
 
-[Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, 
-"Introduction to Algorithms"
-](https://mitpress.mit.edu/books/introduction-algorithms)
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, 
+"[Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms)", 3rd ed., 2009
 
 for educational use in the data structures and algorithms courses
 [CSC263](http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC263H1) and 
