@@ -3,7 +3,7 @@ from linear_search import linear_search
 import unittest
 
 
-class InsertionSortTests(unittest.TestCase):
+class LinearSearchTests(unittest.TestCase):
     def test_simple(self):
         items = [9, 8, 7, 6, 5, 4, 3, 2, 1]
         x = 5
