@@ -46,7 +46,7 @@ def merge(items, l, m, r):
 
 def merge_sort_helper(items, l, r):
     if l < r:
-        m = (l + r) / 2
+        m = (l + r) // 2
         merge_sort_helper(items, l, m)
         merge_sort_helper(items, m + 1, r)
         merge(items, l, m, r)

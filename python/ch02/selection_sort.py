@@ -25,8 +25,6 @@ def selection_sort(items):
 
         # Swap the items at j and i_min if needed.
         if i_min != j:
-            temp = items[j]
-            items[j] = items[i_min]
-            items[i_min] = temp
+            items[j], items[i_min] = items[i_min], items[j]
 
     return items

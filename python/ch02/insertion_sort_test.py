@@ -5,8 +5,9 @@ import unittest
 
 class InsertionSortTests(unittest.TestCase):
     def test_reverse_order(self):
-        self.assertEqual(insertion_sort([9, 8, 7, 6, 5, 4, 3, 2, 1]),
-                         [1, 2, 3, 4, 5, 6, 7, 8, 9])
+        items = [9, 8, 7, 6, 5, 4, 3, 2, 1]
+        sorted_items = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        self.assertEqual(sorted_items, insertion_sort(items))
 
 
 def main():

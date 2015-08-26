@@ -14,13 +14,12 @@ def insertion_sort(items):
         The sorted list of items. 
     """
 
-    num = len(items)
-    for j in range(1, num):
+    for j in range(1, len(items)):
         key = items[j]
 
-        # Insert items[j] into the sorted sequence items[1..j-1]
+        # Insert items[j] into the sorted sequence items[0..j-1]
         i = j - 1
-        while i >= 0 and items[i] > key:
+        while 0 <= i and key < items[i]:
             items[i + 1] = items[i]
             i = i - 1
         items[i + 1] = key

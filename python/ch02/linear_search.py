@@ -3,7 +3,7 @@
 # Ex. 2.1-3
 
 
-def linear_search(x, items):
+def linear_search(items, x):
     """Searches for an item in a list of items.
 
     Uses linear search to find the index of x in the list items.

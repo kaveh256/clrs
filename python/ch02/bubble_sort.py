@@ -18,8 +18,6 @@ def bubble_sort(items):
     for i in range(1, len(items)):
         for j in range(1, len(items)):
             if items[j] < items[j - 1]:
-                temp = items[j]
-                items[j] = items[j - 1]
-                items[j - 1] = temp
+                items[j], items[j - 1] = items[j - 1], items[j]
 
     return items
