@@ -16,7 +16,7 @@ def linear_search(x, items):
         otherwise None.
     """
 
-    for i in range(1, len(items)):
+    for i in range(len(items)):
         if x == items[i]:
             return i
     return None
