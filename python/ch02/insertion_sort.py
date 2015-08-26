@@ -1,6 +1,7 @@
 # Insertion Sort
 # CLRS Chapter 2 Page 18
 
+
 def insertion_sort(items):
     """Sorts a list of items.
 
