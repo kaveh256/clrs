@@ -10,7 +10,10 @@ def square_matrix_multiply(a, b):
         b: A square matrix.
 
     Returns:
-        The matrix resulting from multiplying a to b. 
+        The matrix resulting from multiplying a to b.
+
+    Required:
+        a and b must be square matrices of the same size.
     """
 
     n = len(a)
