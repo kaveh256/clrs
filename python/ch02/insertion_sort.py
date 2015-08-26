@@ -4,7 +4,7 @@
 def insertion_sort(items):
     """Sorts a list of items.
 
-    Uses inserstion sort to sort the collection items.
+    Uses inserstion sort to sort the list items.
     
     Args:
         items: A list of items.
